@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bint_Rahmani Cafe</title>
+    <style>
+        /* Beberapa styling dasar untuk tata letak */
+        .menu-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        #cart-items {
+            margin-top: 20px;
+        }
+        #cart-items p {
+            border-bottom: 1px solid #ddd;
+            padding: 5px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1>Bint_Rahmani Cafe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Bint_Rahmani Cafe</h2>
+            <p>Nikmati kopi terbaik dan hidangan lezat kami</p>
+            <a href="#menu" class="btn">Lihat Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Menu Makanan dan Minuman</h2>
+
+        <!-- Minuman Section -->
+        <div class="menu-category">
+            <h3>Minuman</h3>
+            <div class="menu-container">
+                <!-- Item 1 - Minuman -->
+                <div class="menu-item">
+                    <img src="kp2.jpg" alt="Coffee">
+                    <h4>Coffee Arabica</h4>
+                    <p>Kopi berkualitas dengan cita rasa khas</p>
+                    <span>Rp 25.000</span>
+                    <button class="add-to-cart" data-name="Coffe Arabica" data-price="25000">Tambah ke Keranjang</button>
+                </div>
+
+                <!-- Item 2 - Minuman -->
+                <div class="menu-item">
+                    <img src="mt.jpg" alt="Matcha Latte">
+                    <h4>matcha Latte</h4>
+                    <p>Matcha dengan rasa sedikit pahit dan creamy</p>
+                    <span>Rp 35.000</span>
+                    <button class="add-to-cart" data-name="Matcha Latte" data-price="35000">Tambah ke Keranjang</button>
+                </div>
+
+                <!-- Item 3 - Minuman -->
+                <div class="menu-item">
+                    <img src="kp1.jpg" alt="Coffee Latte">
+                    <h4>Coffee Latte</h4>
+                    <p>Kopi dengan wangi yang khas dan creamy</p>
+                    <span>Rp 35.000</span>
+                    <button class="add-to-cart" data-name="Coffe Latte" data-price="35000">Tambah ke Keranjang</button>
+                </div>
+
+                <!-- Item 4 - Minuman -->
+                <div class="menu-item">
+                    <img src="CL1.jpg" alt="Choco Latte">
+                    <h4>matcha Latte</h4>
+                    <p>Chocolate dengan rasa yang creamy dan lezat</p>
+                    <span>Rp 30.000</span>
+                    <button class="add-to-cart" data-name="Choco Latte" data-price="30000">Tambah ke Keranjang</button>
+                </div>
+
+                <!-- Add more drink items here -->
+            </div>
+        </div>
+
+        <!-- Makanan Section -->
+        <div class="menu-category">
+            <h3>Makanan</h3>
+            <div class="menu-container">
+                <!-- Item 1 - Makanan -->
+                <div class="menu-item">
+                    <img src="ca.jpg" alt="Croissant Almond">
+                    <h4>Croissant Almond</h4>
+                    <p>Croissant crispy di luar dan lembut di dalam dengan topping kacang Almond</p>
+                    <span>Rp 35.000</span>
+                    <button class="add-to-cart" data-name="Croissant Almond" data-price="35000">Tambah ke Keranjang</button>
+                </div>
+
+                 <!-- Item 2 - Makanan -->
+                 <div class="menu-item">
+                    <img src="c1.jpg" alt="Croissant">
+                    <h4>Croissant</h4>
+                    <p>Croissant crispy di luar dan lembut di dalam</p>
+                    <span>Rp 30.000</span>
+                    <button class="add-to-cart" data-name="Croissant" data-price="30000">Tambah ke Keranjang</button>
+                </div>
+
+                 <!-- Item 3 - Makanan -->
+                 <div class="menu-item">
+                    <img src="waffle.jpg" alt="Waffle">
+                    <h4>Waffle</h4>
+                    <p>Waffle dengan cita rasa yang manis dan kaya</p>
+                    <span>Rp 45.000</span>
+                    <button class="add-to-cart" data-name="Waffle" data-price="45000">Tambah ke Keranjang</button>
+                </div>
+
+                 <!-- Item 4 - Makanan -->
+                 <div class="menu-item">
+                    <img src="mc.jpg" alt="Macaron">
+                    <h4>Macaron</h4>
+                    <p>Macaron dengan tektur yang renyah di luar dan kenyal di dalam</p>
+                    <span>Rp 50.000</span>
+                    <button class="add-to-cart" data-name="Macaron" data-price="50000">Tambah ke Keranjang</button>
+                </div>
+
+                 <!-- Item 5 - Makanan -->
+                 <div class="menu-item">
+                    <img src="mix platter.jpg" alt="Mix Platter">
+                    <h4>Mix Platter</h4>
+                    <p>Mix Platter dengan isian onion rings, chicken, and french fries</p>
+                    <span>Rp 55.000</span>
+                    <button class="add-to-cart" data-name="Mix Platter" data-price="55000">Tambah ke Keranjang</button>
+                </div>
+
+                <!-- Add more food items here -->
+            </div>
+        </div>
+    <section id="cart" class="cart">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items">
+            <p>Keranjang kosong</p>
+        </div>
+        <p>Total: <span id="cart-total">Rp 0</span></p>
+        <button id="checkout-btn" class="btn">Checkout</button>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Bint_Rahmani Cafe adalah tempat di mana Anda dapat menikmati kopi berkualitas dan makanan lezat, ditemani suasana nyaman dan layanan terbaik.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Untuk pemesanan dan informasi lebih lanjut, hubungi kami di <strong>+628123456789</strong> atau kunjungi kami di <em>Jl. Kopi No. 123, Jakarta</em>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bint_Rahmani Cafe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
